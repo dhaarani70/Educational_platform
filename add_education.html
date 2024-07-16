@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Add Education - Education Details{% endblock %}
+
+{% block content %}
+    <h2>Add Education</h2>
+    <form method="post" action="{{ url_for('add_education') }}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree"><br>
+        <label for="institution">Institution:</label>
+        <input type="text" id="institution" name="institution"><br>
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year"><br>
+        <input type="submit" value="Add">
+    </form>
+{% endblock %}

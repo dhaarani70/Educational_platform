@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        <h1>Welcome to the Education Platform</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('view_learning_materials') }}">Learning Materials</a></li>
+            <li><a href="{{ url_for('view_mentors') }}">Mentors</a></li>
+            <li><a href="{{ url_for('view_students') }}">Students</a></li>
+            <li><a href="{{ url_for('view_teachers') }}">Teachers</a></li>
+            <li><a href="{{ url_for('view_school_details') }}">School Details</a></li>
+            <li><a href="{{ url_for('view_tuition_centers') }}">Tuition Centers</a></li>
+            <li><a href="{{ url_for('view_activity_centers') }}">Activity Centers</a></li>
+            <li><a href="{{ url_for('view_training_centers') }}">Training Centers</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2024 Education Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

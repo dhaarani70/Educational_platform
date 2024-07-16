@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>School Details</h1>
+    </header>
+    <main>
+        <h2>{{ details.name }}</h2>
+        <p><strong>Location:</strong> {{ details.location }}</p>
+        <p><strong>Admission Window:</strong> {{ details.admission_window }}</p>
+        <p><strong>Fees Structure:</strong> {{ details.fees_structure }}</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Education Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
